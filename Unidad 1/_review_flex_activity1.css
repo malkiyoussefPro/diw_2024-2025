@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: #FEF9FF;
+}
+
+header {
+    display: flex;
+    background-color: #434960;
+    color: #CAD178;
+    justify-content: space-between;
+    height: 120px;
+    align-items: center;
+    padding: 0 20px; 
+}
+
+.logo-square {
+    height: 80px;
+}
+/* para pantallas de moviles (600px o más) */
+@media (max-width: 600px) {
+    .nav-logo {
+        display: flex; 
+        align-items: center; 
+    }
+    .logo-square {
+        display: none;
+    }
+
+    .logo-landscape {
+        width: 120px;
+        height: 60px;
+    }
+
+    .menu-item {
+        padding: 10px;
+    }
+
+    span {
+        display: none;
+    }
+
+    .nav-primary {
+        display: none;
+    }
+
+    .nav-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        padding: 10px;
+    }
+
+    aside {
+        display: flex;
+        background-color: #CAD178;
+        width: 100%;
+        height: 250px;
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        text-decoration: none;
+        display: block;
+        margin: 15px;
+        padding: 10px;
+        color: #252323;
+    }
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 100%;
+        background-color: #95818D;
+        color: #252323;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 250px;
+        margin: 20px;
+        padding: 15px;
+        text-align: center; 
+    }
+
+    .products-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
+    .item:hover{
+        background-color: #aca9ab !important;
+    }
+    a:hover{
+        color: black;
+        font-size: x-large;
+    }
+}
+
+/* para pantallas de tablet (de 600px a 768px) */
+@media (min-width: 600px) and (max-width: 768px) {
+    .nav-logo {
+        display: flex; 
+        align-items: center; 
+    }
+
+    .nav-icons .nav-text {
+        display: inline;
+    }
+
+    .logo-square {
+        display: none; /
+    }
+
+    .logo-landscape {
+        width: 120px;
+        height: 60px;
+    }
+
+    .menu-item {
+        padding: 10px;
+    }
+
+    .nav-primary {
+        display: none;
+    }
+
+    .nav-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        padding: 10px;
+    }
+
+    aside {
+        display: flex;
+        background-color: #CAD178;
+        width: 100%;
+        height: 250px;
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        text-decoration: none;
+        display: block;
+        margin: 15px;
+        padding: 10px;
+        color: #252323;
+    }
+
+    .item {
+        display: flex;
+        flex: 1 1 25%; 
+        background-color: #95818D;
+        color: #252323;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 150px;
+        margin: 20px;
+        padding: 15px;
+        text-align: center; 
+    }
+
+    .products-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
+}
+
+/* para pantallas de desktop (de 768px a 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+    header {
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+    }
+
+    .nav-logo {
+        display: flex; 
+        align-items: center; 
+    }
+
+    .nav-icons .nav-text {
+        display: inline;
+    }
+
+    .logo-square {
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo-landscape {
+        display: none; 
+    }
+
+    .fa-bars {
+        display: none;
+    }
+
+    .menu-item {
+        padding: 10px;
+    }
+
+    .nav-primary {
+        display: flex; 
+    }
+
+    .nav-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        padding: 10px;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column; 
+        align-items:flex-start;
+        justify-content: end;
+        background-color: #CAD178;
+        width: 200px; 
+        height: 100%;
+        order: -1; 
+        margin-bottom: 20px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row; 
+        flex-grow: 1; 
+    }
+
+    nav a {
+        text-decoration: none;
+        display: block;
+        margin: 15px;
+        padding: 10px;
+        color: #252323;
+    }
+
+    .item {
+        display: flex;
+        flex: 1 1 25%; 
+        background-color: #95818D;
+        color: #252323;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 150px;
+        margin: 20px;
+        padding: 15px;
+        text-align: center; 
+    }
+
+    .products-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
+}
+@media (min-width: 993px) {
+    header {
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+    }
+
+    .nav-logo {
+        display: flex; 
+        align-items: center; 
+    }
+
+    .nav-icons .nav-text {
+        display: inline;
+    }
+
+    .logo-square {
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo-landscape {
+        display: none; 
+    }
+
+    .fa-bars {
+        display: none;
+    }
+
+    .menu-item {
+        padding: 10px;
+    }
+
+    .nav-primary {
+        display: flex; 
+    }
+
+    .nav-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        padding: 10px;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start;
+        justify-content: start;
+        background-color: #CAD178;
+        width: 200px; 
+        height: 100%;
+        order: -1; 
+        margin-bottom: 20px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row; 
+        flex-grow: 1; 
+        
+    }
+
+    nav a {
+        text-decoration: none;
+        display: block;
+        margin: 15px;
+        padding: 10px;
+        color: #252323;
+    }
+
+    .products-container {
+        display: flex; /* Flexbox para organizar los elementos en línea */
+        flex-wrap: nowrap; /* No permitir el envolvimiento */
+        justify-content: flex-start; /* Alinear los elementos al inicio */
+        overflow-x: auto; /* Permitir desplazamiento horizontal si es necesario */
+    }
+
+    .item {
+        display: flex;
+        flex: 0 0 auto; /* Permitir que los elementos mantengan su tamaño */
+        background-color: #95818D;
+        color: #252323;
+        align-items: center;
+        justify-content: center;
+        width: 150px; /* Ajusta el ancho según sea necesario */
+        height: 150px;
+        margin: 20px; /* Este margen puede hacer que se rompan, considera reducirlo */
+        padding: 15px;
+        text-align: center; 
+    }
+}
+
+
+
