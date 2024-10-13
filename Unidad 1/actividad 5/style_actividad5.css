@@ -1,0 +1,126 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:  rgb(233, 242, 239);;
+}
+.headers{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: white;
+    border: 2px solid #0A117A;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    height: 80px;  
+}
+
+.logo img{
+    width:70px;
+    height: 70px;
+    border-radius: 5px;
+    
+}
+
+.elements{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 15px;
+    gap: 50px;
+}
+.elements a{
+    text-decoration: none;
+    color:#0A117A;
+    font-size: large;
+}
+.elements a:hover{
+    background-color:#0A117A;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#button_login{
+    background-color: #3CC7D6;
+    color: white;
+    border-radius: 5px;
+    width: 70px;
+    height: 35px;
+    font-size: 15px;
+    border-color: white;
+}
+
+
+#btn_ballena3d{
+    background-color:#0A117A;
+    color: white;
+    border-radius: 5px;
+    width: 70px;
+    height: 35px;
+    font-size: 15px;
+    border-color: white;
+}
+
+#button_login:hover{
+    background-color: white;
+    color: #0A117A;
+    border-color:#0A117A ;
+}
+
+h1{
+    color: #0A117A;
+    margin: 5px;
+    padding: 10px;
+}
+
+main{
+    background-color: aquamarine;
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+}
+
+.ballena3d{
+    display: flex;
+}
+.btn_ballena3d{
+    display: flex;
+    justify-content: end;
+    justify-items: end;
+
+}
+.ballena3d img{
+    background-color: aquamarine;
+    border-radius: 2px solid black;
+    width: 800px;
+    height: 400px;
+    margin: 10px;
+    padding: 10px;
+}
+.content{
+display: flex;
+flex-direction: column;
+margin: 15px;
+padding: 15px;
+justify-content: space-around;
+align-items: center;
+ 
+}
+.home{
+  text-justify: auto;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.ballena{
+    margin: 15px;
+    padding: 15px;
+}

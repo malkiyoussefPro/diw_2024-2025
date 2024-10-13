@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 5 unidad 1</title>
+    <link rel="stylesheet" href="style_actividad5.css">
+    <script src="script_actividad5.js"></script>
+<script>
+    
+// Selecciona el botón y el header con clase "headers"
+const button = document.getElementById('button_login');
+const header = document.querySelector('.headers'); // Seleccionamos usando la clase
+
+// Cambia el fondo del header cuando el mouse está sobre el botón
+button.addEventListener('mouseover', function() {
+  header.style.backgroundColor = '#3CC7D6'; // Cambia a color turquesa vivo
+});
+
+// Restaura el fondo original cuando el mouse sale del botón
+button.addEventListener('mouseout', function() {
+  header.style.backgroundColor = '#0A117A'; // Azul profundo original
+});
+
+</script>
+
+</head>
+
+<body>
+  <header>
+      <div class="headers" id="header">
+        <div class="logo">
+            <img src="/Unidad 1/actividad 5/img/logo.png" alt="" srcset="">
+        </div>
+        <div class="elements">
+            <a href="">Home</a>
+            <a href="">Historia</a>
+            <a href="">Portafolio</a>
+            <a href="">Noticias</a>
+            <a href="">Proyectos</a>
+        </div>
+        <div class="login">
+            <button type="button" id="button_login">Login</button>
+        </div>
+      </div>
+    </header>
+
+
+    <h1>Home</h1>
+    
+        <p class="home">
+            Lorem ipsum simus iste repellendus porro dolores fuga saepe, laboriosam expedita voluptate distinctio quasi! Repudiandae
+             optio libero nulla deleniti porro dolore qui asperiores corporis quas, explicabo perferendis maiores veritatis quidem
+              laudantium nisi aliquam in, molestias dignissimos necessitatibus? Reiciendis non tempore sapiente nemo amet ipsam debitis 
+              quam magni! Quod libero veritatis voluptatibus provident omnis! Obcaecati quasi animi quae facilis vero eum soluta molestiae,
+              
+        </p>
+    <main>
+
+        <div class="content">
+            <div class="ballena3d">
+                <img src="/Unidad 1/actividad 5/img/image3d.png" alt="" class="ballena">
+                <div class="btn_ballena3d">
+                    <button type="button" id="btn_ballena3d">Ver 3D</button>
+                </div>
+            </div>
+            <p class="ballena">
+              
+                 ipsam sequi, saepe laudantium, cupiditate quas praesentium 
+                 consequuntur id, esse omnis. Quibusdam aliquid facilis 
+                 veritatis iste recusandae maiores vel ipsa exercitationem 
+                 cum omnis ab dolores eius assumenda reiciendis, et eum nulla minima esse quas itaque? Voluptatem similique 
+                 iste qui minima sapiente voluptatum! Autem eos possimus deserunt nulla? Dolorem aliquid ab aspernatur soluta error,
+                  tempora veniam ratione omnis. Voluptatem error at fuga, minima quaerat corrupti saepe sint quibusdam repudiandae 
+                  fugiat accusantium nobis voluptatum inventore eaque ratione hic voluptate reprehenderit. Quaerat, officiis deleniti
+                   provident eligendi corrupti veniam alias ab ipsum quas voluptatibus accusantium saepe error molestiae nisi tempore blanditiis 
+                   dolor sapiente facilis excepturi doloremque minima officia impedit itaque illum? Rerum sit unde repudiandae quae perspiciatis
+                    quisquam eligendi modi, vel consequatur reprehenderit repellat accusantium eius sunt laudantium adipisci iusto commodi
+                    
+            </p>
+          </div>
+
+    </main>
+
+</body>
+</html>
