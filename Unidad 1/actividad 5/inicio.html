@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Bienvenida</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/Unidad 1/actividad 5/css/bienvenida.css"> 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Evitar scroll si la imagen excede la pantalla */
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .welcome-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .welcome-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease; /* Transición suave para el efecto */
+        }
+
+        .welcome-image:hover {
+            transform: scale(1.05); /* Ampliación de la imagen al pasar el ratón */
+        }
+
+        .welcome-link {
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 15px 30px;
+            background-color: rgba(135, 0, 0, 0.8); /* Botón semi-transparente */
+            color: #E9F2EF;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .welcome-link:hover {
+           
+            /* Color del botón al pasar el ratón */
+            background-color: rgba(126, 127, 154, 0.8); 
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <!-- Reemplaza con la ruta de tu imagen -->
+        <img src="/Unidad 1/actividad 5/img/img9.jpg" alt="Bienvenida" class="welcome-image">
+        <!-- Cambia 'home.html' por la ruta a la página de inicio -->
+        <a href="home.html" class="welcome-link">Bienvenido</a> 
+    </div>
+</body>
+</html>
+

@@ -3,26 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actividad 5 unidad 1</title>
-    <link rel="stylesheet" href="style_actividad5.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="/Unidad 1/actividad 5/css/home.css">
     <script src="script_actividad5.js"></script>
-<script>
-    
-// Selecciona el botón y el header con clase "headers"
-const button = document.getElementById('button_login');
-const header = document.querySelector('.headers'); // Seleccionamos usando la clase
 
-// Cambia el fondo del header cuando el mouse está sobre el botón
-button.addEventListener('mouseover', function() {
-  header.style.backgroundColor = '#3CC7D6'; // Cambia a color turquesa vivo
-});
-
-// Restaura el fondo original cuando el mouse sale del botón
-button.addEventListener('mouseout', function() {
-  header.style.backgroundColor = '#0A117A'; // Azul profundo original
-});
-
-</script>
 
 </head>
 
@@ -30,17 +14,17 @@ button.addEventListener('mouseout', function() {
   <header>
       <div class="headers" id="header">
         <div class="logo">
-            <img src="/Unidad 1/actividad 5/img/logo.png" alt="" srcset="">
+            <img src="/Unidad 1/actividad 5/img/logo_header.png" alt="" srcset="">
         </div>
         <div class="elements">
-            <a href="">Home</a>
+            <a href="home.html">Home</a>
             <a href="">Historia</a>
-            <a href="">Portafolio</a>
+            <a href="portafolio.html">Portafolio</a>
             <a href="">Noticias</a>
             <a href="">Proyectos</a>
         </div>
         <div class="login">
-            <button type="button" id="button_login">Login</button>
+            <a href="login.html"><button type="button" id="button_login">Login</button></a>    
         </div>
       </div>
     </header>
@@ -59,9 +43,7 @@ button.addEventListener('mouseout', function() {
 
         <div class="content">
             <div class="ballena3d">
-                <img src="/Unidad 1/actividad 5/img/image3d.png" alt="" class="ballena">
-                <div class="btn_ballena3d">
-                    <button type="button" id="btn_ballena3d">Ver 3D</button>
+                <div class="sketchfab-embed-wrapper"> <iframe title="Blue whale skeleton" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/8502dbef80ed4aa688c13c90cb14de73/embed?ui_theme=dark"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/blue-whale-skeleton-8502dbef80ed4aa688c13c90cb14de73?utm_medium=embed&utm_campaign=share-popup&utm_content=8502dbef80ed4aa688c13c90cb14de73" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Blue whale skeleton </a> by <a href="https://sketchfab.com/NHM_Imaging?utm_medium=embed&utm_campaign=share-popup&utm_content=8502dbef80ed4aa688c13c90cb14de73" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> NHM_Imaging </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=8502dbef80ed4aa688c13c90cb14de73" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
                 </div>
             </div>
             <p class="ballena">

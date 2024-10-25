@@ -1,0 +1,69 @@
+/* Reset de estilos y box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilos para el header */
+header {
+    background-color: #101540; /* Fondo oscuro */
+    padding: 15px 30px;
+}
+
+.headers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100px; /* Ajustar el tamaño del logo */
+}
+
+.elements a {
+    color: #E9F2EF; /* Color de los enlaces */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.elements a:hover {
+    color: #7E7F9A; /* Cambiar color al pasar el ratón */
+}
+
+.login a button {
+    background-color: #870000; /* Color del botón */
+    color: #E9F2EF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login a button:hover {
+    background-color: #7E7F9A; /* Color al pasar el ratón */
+}
+
+/* Diseño responsive para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .headers {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .elements a {
+        margin: 10px 0;
+    }
+
+    .login {
+        margin-top: 15px;
+    }
+}
+
+div .sketchfab{
+    height: 1000px;
+    width: 400px;
+}
