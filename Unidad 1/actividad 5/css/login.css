@@ -1,46 +1,46 @@
-/* Reset de estilos y box-sizing */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos básicos del cuerpo */
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #E9F2EF;
     margin: 0;
-    min-height: 100vh; /* Asegura que el body ocupe al menos la altura de la ventana */
+    min-height: 100vh; 
     display: flex;
-    flex-direction: column; /* Organiza los hijos en columna */
+    flex-direction: column; 
 }
 
-/* Estilos para el header */
+
 header {
-    background-color: #101540; /* Fondo oscuro */
+    background-color: #101540; 
     padding: 15px 30px;
-    width: 100%; /* Asegura que el header ocupe todo el ancho */
-    position: fixed; /* Fija el header en la parte superior */
+    width: 100%; 
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade una sombra para separar visualmente el header */
+    z-index: 1000; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 .headers {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px; /* Limita el ancho para mantener el contenido centrado */
-    margin: 0 auto; /* Centra el contenido dentro del header */
+    max-width: 1200px;
+    margin: 0 auto; 
 }
 
 .logo img {
-    max-width: 100px; /* Ajustar el tamaño del logo */
+    max-width: 100px;
 }
 
 .elements a {
-    color: #E9F2EF; /* Color de los enlaces */
+    color: #E9F2EF; 
     text-decoration: none;
     margin: 0 15px;
     font-size: 18px;
@@ -48,11 +48,11 @@ header {
 }
 
 .elements a:hover {
-    color: #7E7F9A; /* Cambiar color al pasar el ratón */
+    color: #7E7F9A; 
 }
 
 .login a button {
-    background-color: #870000; /* Color del botón */
+    background-color: #870000; 
     color: #E9F2EF;
     padding: 10px 20px;
     border: none;
@@ -63,10 +63,10 @@ header {
 }
 
 .login a button:hover {
-    background-color: #7E7F9A; /* Color al pasar el ratón */
+    background-color: #7E7F9A; 
 }
 
-/* Diseño responsive para pantallas más pequeñas */
+
 @media (max-width: 768px) {
     .headers {
         flex-direction: column;
@@ -82,9 +82,9 @@ header {
     }
 }
 
-/* Contenedor del formulario */
+
 main {
-    flex: 1; /* Permite que el main ocupe el espacio restante */
+    flex: 1;
     display: flex;
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente dentro del main */
