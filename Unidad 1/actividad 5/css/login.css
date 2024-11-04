@@ -78,9 +78,9 @@ header {
 main {
     flex: 1;
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente dentro del main */
-    padding-top: 80px; /* Espacio para el header fijo */
+    justify-content: center; 
+    align-items: center; 
+    padding-top: 80px; 
 }
 
 .form-container {
@@ -92,14 +92,14 @@ main {
     max-width: 400px;
 }
 
-/* Título del formulario */
+
 form h2 {
     color: #E9F2EF;
     text-align: center;
     margin-bottom: 20px;
 }
 
-/* Estilo para el grupo de entradas */
+
 .input-group {
     position: relative;
     margin-bottom: 20px;
@@ -114,7 +114,7 @@ form h2 {
 
 .input-group input {
     width: 100%;
-    padding: 10px 40px; /* Espacio para el icono */
+    padding: 10px 40px; 
     border: 1px solid #7E7F9A;
     border-radius: 5px;
     font-size: 16px;

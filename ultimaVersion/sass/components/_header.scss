@@ -1,0 +1,19 @@
+header {
+    background-color: $primary-color; 
+    padding: 15px 30px;
+
+    .headers {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    .logo img {
+        max-width: 100px;
+    }
+}

@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
     line-height: 1.6;
 }
 
@@ -92,7 +92,7 @@ h1 {
 
 .ballena3d {
     width: 100%;
-    max-width: 100%; /* Sin restricciones de ancho */
+    max-width: 100%;
     border: 2px solid #7E7F9A;
     border-radius: 8px;
     overflow: hidden;
@@ -108,7 +108,7 @@ h1 {
     background-color: #7E7F9A;
 }
 .footer {
-height:50px;
+height:70px;
 width: 100%;
 background-color: #101540;
 }
@@ -116,6 +116,11 @@ background-color: #101540;
     color: #E9F2EF;
     text-align: center;
     margin-bottom: 5px;
+}
+h4{
+    color: #E9F2EF;
+    text-align: center;
+    margin-top  : 5px;
 }
 @media (max-width: 768px) {
     header {
