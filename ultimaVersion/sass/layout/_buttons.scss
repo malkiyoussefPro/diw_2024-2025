@@ -1,0 +1,11 @@
+// _buttons.scss
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.button-primary {
+  @include button-style($primary-color, $text-color);
+}
+
+.button-secondary {
+  @include button-style($secondary-color, $text-color);
+}
