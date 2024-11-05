@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #101540;
+  padding: 15px 30px;
+}
+header .headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+header .logo img {
+  max-width: 100px;
+}
+header .elements a {
+  color: #E9F2EF;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+header .elements a:hover {
+  color: #7E7F9A;
+}
+header .login a button {
+  background-color: #870000;
+  color: #E9F2EF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+header .login a button:hover {
+  background-color: #7E7F9A;
+}
+
+h1 {
+  color: #101540;
+  margin: 15px;
+  padding: 5px;
+  text-align: center;
+}
+
+.home {
+  border: 2px solid #700000;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: justify;
+  background-color: #700000;
+  color: #E9F2EF;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ballena {
+  border: 2px solid #870000;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: justify;
+  background-color: #870000;
+  color: #E9F2EF;
+}
+
+.ballena3d {
+  width: 100%;
+  max-width: 100%;
+  border: 2px solid #7E7F9A;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.sketchfab-embed-wrapper,
+iframe {
+  width: 100%;
+  height: 400px;
+}
+
+.footer {
+  height: 70px;
+  width: 100%;
+  background-color: #101540;
+}
+.footer p {
+  color: #E9F2EF;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.footer h4 {
+  color: #E9F2EF;
+  text-align: center;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px 20px;
+  }
+  .headers {
+    flex-direction: column;
+    align-items: center;
+  }
+  .elements a {
+    display: block;
+    margin: 5px 0;
+  }
+  .login {
+    margin-top: 10px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  .home {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .login a button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  .ballena3d,
+  .sketchfab-embed-wrapper,
+  iframe {
+    height: 300px;
+  }
+}/*# sourceMappingURL=home.css.map */

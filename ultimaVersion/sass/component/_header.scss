@@ -1,0 +1,53 @@
+// Header
+header {
+    background-color: $bg-color-header;
+    padding: 15px 30px;
+  
+    .headers {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+  
+    .logo img {
+      max-width: 100px;
+    }
+  
+    .elements a {
+      color: $text-color-light;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 18px;
+      transition: color 0.3s ease;
+  
+      &:hover {
+        color: $hover-color;
+      }
+    }
+  
+    .login a button {
+      background-color: $bg-color-button;
+      color: $text-color-light;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: $hover-color;
+      }
+    }
+  }
+  
+  // Header Titles
+  h1 {
+    color: $text-color-dark;
+    margin: 15px;
+    padding: 5px;
+    text-align: center;
+  }
+  

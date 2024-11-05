@@ -1,0 +1,75 @@
+@import './base/variables';
+@import './base/reset';
+@import './component/header';
+@import './component/footer';
+
+// Main Content
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+// Form Container
+.form-container {
+  background-color: $bg-color-header;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+
+  form {
+    h2 {
+      color: $text-color-light;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// Input Group
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+
+  i {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    color: $border-color;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px 40px;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: $bg-color-body;
+    color: $text-color-dark;
+
+    &::placeholder {
+      color: $border-color;
+    }
+  }
+}
+
+// Button
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: $bg-color-button;
+  color: $text-color-light;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+}

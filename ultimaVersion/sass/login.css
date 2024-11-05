@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #E9F2EF;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #101540;
+  padding: 15px 30px;
+}
+header .headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+header .logo img {
+  max-width: 100px;
+}
+header .elements a {
+  color: #E9F2EF;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+header .elements a:hover {
+  color: #7E7F9A;
+}
+header .login a button {
+  background-color: #870000;
+  color: #E9F2EF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+header .login a button:hover {
+  background-color: #7E7F9A;
+}
+
+h1 {
+  color: #00000F;
+  margin: 15px;
+  padding: 5px;
+  text-align: center;
+}
+
+.footer {
+  height: 70px;
+  width: 100%;
+  background-color: #101540;
+}
+.footer p {
+  color: #E9F2EF;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.footer h4 {
+  color: #E9F2EF;
+  text-align: center;
+  margin-top: 5px;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.form-container {
+  background-color: #101540;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+.form-container form h2 {
+  color: #E9F2EF;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+.input-group i {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  color: #7E7F9A;
+}
+.input-group input {
+  width: 100%;
+  padding: 10px 40px;
+  border: 1px solid #7E7F9A;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #E9F2EF;
+  color: #00000F;
+}
+.input-group input::-moz-placeholder {
+  color: #7E7F9A;
+}
+.input-group input::placeholder {
+  color: #7E7F9A;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #870000;
+  color: #E9F2EF;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: #7E7F9A;
+}/*# sourceMappingURL=login.css.map */

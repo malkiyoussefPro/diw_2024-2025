@@ -1,0 +1,18 @@
+// Footer
+.footer {
+    height: 70px;
+    width: 100%;
+    background-color: $bg-color-header;
+  
+    p {
+      color: $text-color-light;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+  
+    h4 {
+      color: $text-color-light;
+      text-align: center;
+      margin-top: 5px;
+    }
+  }
