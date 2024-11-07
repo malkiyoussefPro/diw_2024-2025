@@ -1,30 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos</title>
-</head>
-<body>
+     <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900&family=Manjari:wght@100;400;700&display=swap" rel="stylesheet">
     
+    <title>Proyecto</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+
+<body>
+    <!-- Header Section -->
     <header>
         <div class="headers" id="header">
-          <div class="logo">
-              <img src="/Unidad 1/actividad 5/img/logo_header.png" alt="" srcset="">
-          </div>
-          <div class="elements">
-              <a href="home.html">Home</a>
-              <a href="historia.html">Historia</a>
-              <a href="portafolio.html">Portafolio</a>
-              <a href="noticias.html">Noticias</a>
-              <a href="portafolio.html">Proyectos</a>
-          </div>
-          <div class="login">
-              <a href="login.html"><button type="button" id="button_login">Login</button></a>    
-          </div>
-        </div>
-      </header>
+            <!-- Logo -->
+            <div class="logo">
+                <img src="./img/logo_header.png" alt="Logo" />
+                <h6>IES JOAN RAMIS I RAMIS</h6>
+            </div>
+            <!-- Hamburger Icon for Responsive Menu -->
+            <div class="hamburger-icon" id="hamburger-icon">
+                &#9776;
+            </div>
 
-      
+            <!-- Navigation Links -->
+            <nav class="elements" id="nav-elements">
+                <a href="home.html">Home</a>
+                <a href="historia.html">Historia</a>
+                <a href="portafolio.html">Portafolio</a>
+                <a href="noticias.html">Noticias</a>
+                <a href="proyectos.html">Proyectos</a>
+            </nav>
+
+            <!-- Login Button with User Icon -->
+            <div class="login">
+                <a href="login.html"><i class="fa-solid fa-circle-user"></i></a>
+                <a href="login.html">
+                    <button type="button" id="button_login">Login
+                    </button>
+                </a>    
+            </div>
+
+        </div>
+    </header>
+    
+    <!-- Contenido de main -->
+    <main class="main-content">
+        <!-- Main Heading -->
+        <h1>Proyecto</h1>
+        
+        <!-- Introduction Paragraph -->
+        <section class="home">
+            <p>
+                Lorem ipsum simus iste repellendus porro dolores fuga saepe, laboriosam expedita voluptate distinctio quasi! Repudiandae
+                optio libero nulla deleniti porro dolore qui asperiores corporis quas, explicabo perferendis maiores veritatis quidem
+                laudantium nisi aliquam in, molestias dignissimos necessitatibus? Reiciendis non tempore sapiente nemo amet ipsam debitis 
+                quam magni! Quod libero veritatis voluptatibus provident omnis! Obcaecati quasi animi quae facilis vero eum soluta molestiae.
+            </p>
+        </section>
+
+        <!-- 3D Model Section -->
+        <section class="content">
+            <div class="ballena3d">
+                <div class="sketchfab-embed-wrapper"> 
+                    <iframe title="Blue whale skeleton" 
+                            frameborder="0" 
+                            allowfullscreen 
+                            mozallowfullscreen="true" 
+                            webkitallowfullscreen="true" 
+                            allow="autoplay; fullscreen; xr-spatial-tracking" 
+                            src="https://sketchfab.com/models/8502dbef80ed4aa688c13c90cb14de73/embed?ui_theme=dark"> 
+                    </iframe>
+                    <p class="credit">
+                        <a href="https://sketchfab.com/3d-models/blue-whale-skeleton-8502dbef80ed4aa688c13c90cb14de73" target="_blank" rel="nofollow">
+                            Blue whale skeleton
+                        </a> by 
+                        <a href="https://sketchfab.com/NHM_Imaging" target="_blank" rel="nofollow">
+                            NHM_Imaging
+                        </a> on 
+                        <a href="https://sketchfab.com" target="_blank" rel="nofollow">Sketchfab</a>
+                    </p>
+                </div>
+            </div>
+                <!-- Description Paragraph -->
+                <article class="ballena">
+                  <div class="description">
+                    <p>
+                        Ipsam sequi, saepe laudantium, cupiditate quas praesentium consequuntur id, esse omnis. Quibusdam aliquid facilis 
+                        veritatis iste recusandae maiores vel ipsa exercitationem cum omnis ab dolores eius assumenda reiciendis, et eum nulla minima 
+                        esse quas itaque? Voluptatem similique iste qui minima sapiente voluptatum! Autem eos possimus deserunt nulla? Dolorem aliquid 
+                        ab aspernatur soluta error, tempora veniam ratione omnis. Voluptatem error at fuga, minima quaerat corrupti saepe sint quibusdam 
+                        repudiandae fugiat accusantium nobis voluptatum inventore eaque ratione hic voluptate reprehenderit.
+                    </p>
+                  </div>
+                </article>
+            
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer">
+            <p>&copy; Derechos reservados 2024-2025</p>
+            <h4>Creado y desarrollado por: Youssef Malki</h4>
+        </div>
+    </footer>
+    <!-- Script Js-->
+    <script>
+
+        const hamburgerIcon = document.getElementById("hamburger-icon");
+        const navElements = document.querySelector(".elements"); 
+        hamburgerIcon.addEventListener("click", () => {
+            navElements.classList.toggle("show");
+        });
+
+
+    </script>
 </body>
 </html>

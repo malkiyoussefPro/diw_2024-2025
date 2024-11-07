@@ -11,9 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900&family=Manjari:wght@100;400;700&display=swap" rel="stylesheet">
     
-    <title>Home</title>
+    <title>Proyecto</title>
     <!-- Styles -->
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./sass/home.css">
 </head>
 
 <body>
@@ -30,8 +30,8 @@
                 &#9776;
             </div>
 
-             <!-- Navigation Links -->
-             <nav class="elements" id="nav-elements">
+            <!-- Navigation Links -->
+            <nav class="elements" id="nav-elements">
                 <a href="home.html">Home</a>
                 <a href="historia.html">Historia</a>
                 <a href="portafolio.html">Portafolio</a>
@@ -54,7 +54,7 @@
     <!-- Contenido de main -->
     <main class="main-content">
         <!-- Main Heading -->
-        <h1>Home</h1>
+        <h1>Proyecto</h1>
         
         <!-- Introduction Paragraph -->
         <section class="home">
@@ -114,12 +114,13 @@
     </footer>
     <!-- Script Js-->
     <script>
-            const hamburgerIcon = document.getElementById("hamburger-icon");
-            const navElements = document.querySelector(".elements"); 
 
-            hamburgerIcon.addEventListener("click", () => {
-                navElements.classList.toggle("show");
-            });
+        const hamburgerIcon = document.getElementById("hamburger-icon");
+        const navElements = document.querySelector(".elements"); 
+        hamburgerIcon.addEventListener("click", () => {
+            navElements.classList.toggle("show");
+        });
+
 
     </script>
 </body>

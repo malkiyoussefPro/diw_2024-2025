@@ -1,16 +1,30 @@
+/* Variables de color */
+:root {
+    --color-bg-primary: #101540;
+    --color-bg-secondary: #700000;
+    --color-bg-tertiary: #870000;
+    --color-text-primary: #E9F2EF;
+    --color-text-secondary: #333;
+    --color-hover: #7E7F9A;
+}
+
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Global Styles */
 body {
     font-family: 'Lato', sans-serif;
     line-height: 1.6;
+    color: var(--color-text-secondary);
 }
 
+/* Header Styles */
 header {
-    background-color: #101540; 
+    background-color: var(--color-bg-primary);
     padding: 15px 30px;
 }
 
@@ -19,31 +33,18 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-}
-
-h1 {
-    color: #101540;
-    margin: 15px;
-    padding: 5px;
     text-align: center;
-}
-
-.home {
-    border: 2px solid #700000;
-    margin: 10px;
-    padding: 15px;
-    border-radius: 15px;
-    background-color: #700000;
-    color: #E9F2EF;
-    text-align: justify;
 }
 
 .logo img {
     max-width: 100px;
 }
 
+h6{
+    color: var(--color-text-primary);
+}
 .elements a {
-    color: #E9F2EF; 
+    color: var(--color-text-primary);
     text-decoration: none;
     margin: 0 10px;
     font-size: 18px;
@@ -51,12 +52,13 @@ h1 {
 }
 
 .elements a:hover {
-    color: #7E7F9A;
+    color: var(--color-hover);
+    font-size: 22px; 
 }
 
-.login a button {
-    background-color: #870000; 
-    color: #E9F2EF;
+.login button {
+    background-color: var(--color-bg-tertiary);
+    color: var(--color-text-primary);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -65,11 +67,54 @@ h1 {
     transition: background-color 0.3s ease;
 }
 
+.login button:hover {
+    background-color: var(--color-hover);
+}
+
+.hamburger-icon {
+    display: none;
+    
+}
+.login{
+    display: flex; 
+    gap: 5px;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+.login i {
+    font-size: 40px; 
+    color: #E9F2EF;
+    margin-right:15px;
+}
+
+ i {
+   width: 30px;
+   height: 30px;
+   
+}
+.login a i:hover{
+    color: var(--color-hover);
+}
+
+.home{
+    border: 2px solid var(--color-bg-primary);
+    margin: 10px ;
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--color-bg-primary);
+    background-color: var(--color-text-primary);
+    font-size: 18px;
+    
+}
+h1{
+    margin-left: 10px;
+}
 .gallery_images_container {
     border: 2px solid #870000;
-    border-radius: 15px;
+    border-radius: 5px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 15px;
     padding: 20px;
     margin: 10px;
@@ -112,20 +157,58 @@ h4 {
     margin-top: 5px;
 }
 
-/* Media Queries */
+/* Responsive Styles */
 @media (max-width: 768px) {
     header {
         padding: 10px 20px;
+       
     }
 
     .headers {
+        display: flex;
+    }
+    .logo {
+      order: 2;
+    }
+    .elements {
+        display: none;
         flex-direction: column;
-        align-items: center;
+        width: 100%;
+        text-align: center;
+        order: 4;
     }
 
     .elements a {
+        padding: 10px;
+        border-top: 1px solid var(--color-text-primary);
+    }
+
+   
+    .elements.show {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px; 
+        padding-top: 10px;
+       
+    }
+    
+    .hamburger-icon {
         display: block;
-        margin: 5px 0;
+        font-size: 50px;
+        order: 1;
+        cursor: pointer;
+        color: var(--color-text-primary);
+    }
+    i{
+        margin-left: 10px;
+    }
+    .login {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        order: 3;
     }
 
     h1 {
@@ -133,29 +216,35 @@ h4 {
     }
 
     .home {
-        margin: 10px;
         padding: 10px;
         font-size: 16px;
     }
 
-    .login a button {
+    .login button {
         padding: 8px 16px;
         font-size: 14px;
+    }   
+    .gallery_images_container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+        padding: 15px;
     }
 
-    .gallery_images_container {
-        gap: 10px;
-        padding: 10px;
+    .gallery_images_items {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .gallery_images_items img {
+        transition: transform 0.5s ease;
+    }
+
+    .gallery_images_items:active img {
+        transform: scale(1.05);
     }
 }
-
-@media (max-width: 480px) {
-    .gallery_images_container {
-        grid-template-columns: 1fr;
-    }
-
-    h1 {
-        font-size: 1.2em;
-        margin: 10px;
+/* Efecto hover para dispositivos no táctiles */
+@media (hover: hover) {
+    .gallery_images_items:hover img {
+        transform: scale(1.1);
     }
 }

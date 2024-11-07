@@ -7,33 +7,49 @@
 body {
   font-family: "Lato", sans-serif;
   line-height: 1.6;
+  color: #333;
 }
 
 header {
   background-color: #101540;
   padding: 15px 30px;
 }
-header .headers {
+
+.headers {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
 }
-header .logo img {
+
+.logo img {
   max-width: 100px;
 }
-header .elements a {
+
+h6 {
+  color: #E9F2EF;
+}
+
+.elements a {
   color: #E9F2EF;
   text-decoration: none;
   margin: 0 10px;
   font-size: 18px;
   transition: color 0.3s ease;
 }
-header .elements a:hover {
+.elements a:hover {
   color: #7E7F9A;
+  font-size: 22px;
 }
-header .login a button {
+
+.login {
+  display: flex;
+  gap: 5px;
+  justify-items: center;
+  justify-content: space-between;
+}
+.login button {
   background-color: #870000;
   color: #E9F2EF;
   padding: 10px 20px;
@@ -43,52 +59,69 @@ header .login a button {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-header .login a button:hover {
+.login button:hover {
   background-color: #7E7F9A;
+}
+.login i {
+  font-size: 40px;
+  color: #E9F2EF;
+  margin-right: 15px;
+}
+.login a i:hover {
+  color: #7E7F9A;
+}
+
+.hamburger-icon {
+  display: none;
+}
+
+i {
+  width: 30px;
+  height: 30px;
+}
+
+.main-content {
+  padding: 20px;
+  margin: 5px auto;
 }
 
 h1 {
   color: #101540;
-  margin: 15px;
+  margin: 10px 0;
   padding: 5px;
-  text-align: center;
+  text-align: left;
 }
 
-.home {
-  border: 2px solid #700000;
+.home, .ballena {
+  border: 2px solid #101540;
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 2px;
+  color: #101540;
+  background-color: #E9F2EF;
+  font-size: 18px;
+}
+
+section .content {
+  width: 95%;
+  background-color: #7E7F9A;
   margin: 10px;
-  padding: 15px;
-  border-radius: 15px;
-  text-align: justify;
-  background-color: #700000;
-  color: #E9F2EF;
+  padding: 10px;
 }
 
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding: 20px;
-  max-width: 800px;
-  margin: auto;
-  border-radius: 8px;
+  max-width: 100%;
+  background-color: #E9F2EF;
+  border: 2px solid #101540;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.ballena {
-  border: 2px solid #870000;
-  margin: 10px;
-  padding: 15px;
-  border-radius: 15px;
-  text-align: justify;
-  background-color: #870000;
-  color: #E9F2EF;
 }
 
 .ballena3d {
   width: 100%;
-  max-width: 100%;
   border: 2px solid #7E7F9A;
   border-radius: 8px;
   overflow: hidden;
@@ -103,18 +136,10 @@ iframe {
 
 .footer {
   height: 70px;
-  width: 100%;
   background-color: #101540;
-}
-.footer p {
   color: #E9F2EF;
   text-align: center;
-  margin-bottom: 5px;
-}
-.footer h4 {
-  color: #E9F2EF;
-  text-align: center;
-  margin-top: 5px;
+  padding: 10px 0;
 }
 
 @media (max-width: 768px) {
@@ -122,31 +147,58 @@ iframe {
     padding: 10px 20px;
   }
   .headers {
+    display: flex;
+  }
+  .logo {
+    order: 2;
+  }
+  .elements {
+    display: none;
     flex-direction: column;
-    align-items: center;
+    width: 100%;
+    text-align: center;
+    order: 4;
   }
   .elements a {
+    padding: 10px;
+    border-top: 1px solid #E9F2EF;
+  }
+  .elements.show {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    padding-top: 10px;
+  }
+  .hamburger-icon {
     display: block;
-    margin: 5px 0;
+    font-size: 50px;
+    order: 1;
+    cursor: pointer;
+    color: #E9F2EF;
+  }
+  i {
+    margin-left: 10px;
   }
   .login {
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    order: 3;
+  }
+  .login button {
+    padding: 8px 16px;
+    font-size: 14px;
   }
   h1 {
     font-size: 24px;
   }
   .home {
-    margin: 10px;
     padding: 10px;
     font-size: 16px;
   }
-  .login a button {
-    padding: 8px 16px;
-    font-size: 14px;
-  }
-  .ballena3d,
-  .sketchfab-embed-wrapper,
-  iframe {
+  .ballena3d, .sketchfab-embed-wrapper, iframe {
     height: 300px;
   }
 }/*# sourceMappingURL=home.css.map */

@@ -1,75 +1,258 @@
-@import './base/variables';
-@import './base/reset';
-@import './component/header';
-@import './component/footer';
+// Variables
+$color-bg-primary: #101540;
+$color-bg-secondary: #700000;
+$color-bg-tertiary: #870000;
+$color-text-primary: #E9F2EF;
+$color-text-secondary: #333;
+$color-hover: #7E7F9A;
 
-// Main Content
-main {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 80px;
+// Mixins
+@mixin transition($property...) {
+  transition: $property;
 }
 
-// Form Container
-.form-container {
-  background-color: $bg-color-header;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 400px;
+// Reset y estilos globales
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  form {
-    h2 {
-      color: $text-color-light;
-      text-align: center;
-      margin-bottom: 20px;
+body {
+  font-family: 'Lato', Arial, sans-serif;
+  line-height: 1.6;
+  color: $color-text-secondary;
+  background-color: $color-text-primary;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+// Estilos del header
+header {
+  background-color: $color-bg-primary;
+  padding: 15px 30px;
+}
+
+.headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  img {
+    max-width: 100px;
+  }
+  
+  h6 {
+    color: $color-text-primary;
+  }
+}
+
+.elements {
+  a {
+    color: $color-text-primary;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    @include transition(color 0.3s ease, font-size 0.3s ease);
+    
+    &:hover {
+      color: $color-hover;
+      font-size: 22px;
     }
   }
 }
 
-// Input Group
+.login {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  
+  i {
+    font-size: 40px;
+    color: $color-text-primary;
+    @include transition(color 0.3s ease);
+    
+    &:hover {
+      color: $color-hover;
+    }
+  }
+  
+  button {
+    background-color: $color-bg-tertiary;
+    color: $color-text-primary;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    @include transition(background-color 0.3s ease);
+    
+    &:hover {
+      background-color: $color-hover;
+    }
+  }
+}
+
+.hamburger-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: $color-text-primary;
+}
+
+// Estilos específicos para la página de login
+.form-container {
+  background-color: $color-bg-primary;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  height: 60%;
+  margin: 80px auto;
+  
+  h2 {
+    color: $color-text-primary;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
 .input-group {
   position: relative;
   margin-bottom: 20px;
-
+  
   i {
     position: absolute;
     top: 12px;
     left: 10px;
-    color: $border-color;
+    color: $color-hover;
   }
-
+  
   input {
     width: 100%;
     padding: 10px 40px;
-    border: 1px solid $border-color;
+    border: 1px solid $color-hover;
     border-radius: 5px;
     font-size: 16px;
-    background-color: $bg-color-body;
-    color: $text-color-dark;
-
+    background-color: $color-text-primary;
+    color: $color-bg-primary;
+    
     &::placeholder {
-      color: $border-color;
+      color: $color-hover;
     }
   }
 }
 
-// Button
 .btn {
   width: 100%;
   padding: 10px;
-  background-color: $bg-color-button;
-  color: $text-color-light;
+  background-color: $color-bg-tertiary;
+  color: $color-text-primary;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-
+  @include transition(background-color 0.3s ease);
+  
   &:hover {
-    background-color: $hover-color;
+    background-color: $color-hover;
+  }
+}
+
+// Footer Styles
+.footer {
+  background-color: $color-bg-primary;
+  color: $color-text-primary;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto;
+  
+  p, h4 {
+    margin: 5px 0;
+  }
+}
+
+// Responsive Styles
+@media (max-width: 768px) {
+  header {
+    padding: 10px 20px;
+  }
+  
+  .headers {
+    display: flex;
+  }
+  
+  .logo {
+    order: 2;
+  }
+  
+  .elements {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    order: 4;
+    
+    a {
+      padding: 10px;
+      border-top: 1px solid $color-text-primary;
+    }
+    
+    &.show {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 5px;
+      padding-top: 10px;
+    }
+  }
+  
+  .hamburger-icon {
+    display: block;
+    font-size: 50px;
+    order: 1;
+    cursor: pointer;
+    color: $color-text-primary;
+  }
+  
+  i {
+    margin-left: 10px;
+  }
+  
+  .login {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    order: 3;
+    
+    button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  main {
+    margin: 30px 0;
+  }
+  
+  .form-container {
+    font-size: 16px;
+    width: 70%;
+    height: 60%;
+  }
+  
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
 }

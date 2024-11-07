@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manjari:wght@100;400;700&display=swap" rel="stylesheet">
-    <title>Home</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900&family=Manjari:wght@100;400;700&display=swap" rel="stylesheet">
+        
+    <title>Portafolio</title>
     <link rel="stylesheet" href="./css/portafolio.css">
    
 
@@ -14,22 +18,38 @@
 </head>
 
 <body>
-  <header>
-      <div class="headers" id="header">
-        <div class="logo">
-            <img src="./img/logo_header.png" alt="" srcset="">
-        </div>
-        <div class="elements">
+    <!-- Header Section -->
+    <header>
+        <div class="headers" id="header">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="./img/logo_header.png" alt="Logo" />
+                <h6>IES JOAN RAMIS I RAMIS</h6>
+            </div>
+            <!-- Hamburger Icon for Responsive Menu -->
+            <div class="hamburger-icon" id="hamburger-icon">
+                &#9776; 
+            </div>
+
+           <!-- Navigation Links -->
+           <nav class="elements" id="nav-elements">
             <a href="home.html">Home</a>
             <a href="historia.html">Historia</a>
             <a href="portafolio.html">Portafolio</a>
             <a href="noticias.html">Noticias</a>
-            <a href="portafolio.html">Proyectos</a>
+            <a href="proyectos.html">Proyectos</a>
+        </nav>
+
+            <!-- Login Button with User Icon -->
+            <div class="login">
+                <a href="login.html"><i class="fa-solid fa-circle-user"></i></a>
+                <a href="login.html">
+                    <button type="button" id="button_login">Login
+                    </button>
+                </a>    
+            </div>
+
         </div>
-        <div class="login">
-            <a href="login.html"><button type="button" id="button_login">Login</button></a>    
-        </div>
-      </div>
     </header>
 
 
@@ -108,11 +128,22 @@
         </div>
 
     </main>
+    <!-- Footer Section -->
     <footer>
         <div class="footer">
-            <p>Derechos reservados 2024-2025 </p>
+            <p>&copy; Derechos reservados 2024-2025</p>
             <h4>Creado y desarrollado por: Youssef Malki</h4>
         </div>
     </footer>
+        <!-- Script Js-->
+        <script>
+            const hamburgerIcon = document.getElementById("hamburger-icon");
+            const navElements = document.querySelector(".elements"); 
+
+            hamburgerIcon.addEventListener("click", () => {
+                navElements.classList.toggle("show");
+            });
+
+    </script>
 </body>
 </html>
