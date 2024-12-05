@@ -1,0 +1,11 @@
+
+@import url('./base/base.css');
+
+/* Footer Styles */
+.footer {
+    height: 70px;
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    text-align: center;
+    padding: 10px 0;
+}

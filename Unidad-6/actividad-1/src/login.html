@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900&family=Manjari:wght@100;400;700&display=swap" rel="stylesheet">
+        
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/login.css">
+ 
+
+</head>
+
+<body>
+          <!-- Header Section -->
+    <header>
+        <div class="headers" id="header">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="./img/logo_header.png" alt="Logo" />
+                <h1>IES JOAN RAMIS I RAMIS</h1>
+            </div>
+            <!-- Hamburger Icon for Responsive Menu -->
+            <div class="hamburger-icon" id="hamburger-icon">
+                &#9776;
+            </div>
+
+             <!-- Navigation Links -->
+             <nav class="elements" id="nav-elements">
+                <a href="home.html">Home</a>
+                <a href="historia.html">Historia</a>
+                <a href="portafolio.html">Portafolio</a>
+                <a href="noticias.html">Noticias</a>
+                <a href="proyectos.html">Proyectos</a>
+            </nav>
+
+            <!-- Login Button with User Icon -->
+            <div class="login">
+                <a href="login.html"><i class="fa-solid fa-circle-user"></i></a>
+                <a href="login.html">
+                    <button type="button" id="button_login">Login
+                    </button>
+                </a>    
+            </div>
+
+        </div>
+    </header>
+
+    <main class="main-content">  
+        <div class="form-container">
+            <form action="#" method="POST">
+                <h2>Iniciar Sesión</h2>
+                
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="username" placeholder="Email o Nombre de Usuario" required>
+                </div>
+                
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" placeholder="Contraseña" required>
+                </div>
+    
+                <button type="submit" class="btn">Iniciar Sesión</button>
+            </form>
+        </div>
+    </main>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer">
+            <p>&copy; Derechos reservados 2024-2025</p>
+            <h4>Creado y desarrollado por: Youssef Malki</h4>
+        </div>
+    </footer>
+
+    <!-- Script Js-->
+
+    <script src="script.js"></script>
+
+</body>
+</html>

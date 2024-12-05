@@ -1,0 +1,21 @@
+/* Variables de color */
+:root {
+    --color-bg-primary: #101540;
+    --color-bg-secondary: #700000;
+    --color-bg-tertiary: #870000;
+    --color-text-primary: #E9F2EF;
+    --color-text-secondary: #333;
+    --color-hover: #7E7F9A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Lato", sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }

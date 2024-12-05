@@ -188,6 +188,22 @@ a {
     color: #0056b3;
 }
 
+/* Divs Articles*/
+.div-articles{
+    display: flex;
+}
+
+.container-images{
+    display: flex;
+    
+
+}
+
+.img-logos img{
+    width: 250px;
+    height: 250px;
+}
+
 /* Footer */
 .footer {
     background-color: rgb(166, 162, 162);
@@ -203,6 +219,10 @@ a {
     font-weight: bold;
 
 }
+
+
+
+
 
 /* Responsive */
 

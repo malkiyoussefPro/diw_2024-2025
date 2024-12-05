@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900&family=Manjari:wght@100;400;700&display=swap" rel="stylesheet">
+    
+    <title>Portafolio</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/communs/communs-style.css">
+    <link rel="stylesheet" href="./css/portafolio.css">
+</head>
+
+<body>
+        <!-- Header Section -->
+        <header>
+            <div class="headers" id="header">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="./img/logo_header.png" alt="Logo" />
+                    <h1>IES JOAN RAMIS I RAMIS</h1>
+                </div>
+                <!-- Hamburger Icon for Responsive Menu -->
+                <div class="hamburger-icon" id="hamburger-icon">
+                    &#9776;
+                </div>
+    
+                 <!-- Navigation Links -->
+                 <nav class="elements" id="nav-elements">
+                    <a href="home.html">Home</a>
+                    <a href="historia.html">Historia</a>
+                    <a href="portafolio.html">Portafolio</a>
+                    <a href="noticias.html">Noticias</a>
+                    <a href="proyectos.html">Proyectos</a>
+                </nav>
+    
+                <!-- Login Button with User Icon -->
+                <div class="login">
+                    <a href="login.html"><i class="fa-solid fa-circle-user"></i></a>
+                    <a href="login.html">
+                        <button type="button" id="button_login">Login
+                        </button>
+                    </a>    
+                </div>
+    
+            </div>
+        </header>
+        
+        <!-- Contenido de main -->
+
+        <main class="main-content">
+        <!-- Introduction Paragraph -->
+         
+        <section class="introduction">
+            <!-- Main Heading -->
+            <h2>Portafolio del Museo de la Ballena Azul</h2>
+            <p>
+                Bienvenidos al portafolio del Museo de la Ballena Azul celebrado en 
+                <strong class="institut">IES RAMIS I RAMIS</strong>. Esta colección de fotografías, 
+                capturadas por <b>Ufe García, Pedro Riveiro, José Ignacio Seguí Chinchilla y Francisco Pérez</b>, 
+                muestra la ballena azul y su entorno. Cada foto cuenta una historia única 
+                sobre estos magníficos mamíferos marinos. Les invitamos a explorar este 
+                fascinante mundo a través de los ojos de nuestros estudiantes.
+            </p>
+        </section>
+
+        <section class="gallery">
+            <h3 class="visually-hidden galeria-h3">Galería de imágenes</h3>
+            <div class="gallery-container">
+                <figure class="gallery-item">
+                    <img src="./img/unnamed1.jpg" alt="Descripción de la imagen 1" 
+                         data-title="Título de la foto 1" 
+                         data-author="Nombre del autor 1" 
+                         onclick="openPopup(this)">
+                    <figcaption class="visually-hidden">Título de la foto 1 por Nombre del autor 1</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img  src="./img/unnamed2.jpg" alt="Descripción de la imagen 2" 
+                         data-title="Título de la foto 2" 
+                         data-author="Nombre del autor 2" 
+                         onclick="openPopup(this)">
+                    <figcaption class="visually-hidden">Título de la foto 2 por Nombre del autor 2</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./img/unnamed3.jpg" alt="Descripción de la imagen 3" 
+                         data-title="Título de la foto 3" 
+                         data-author="Nombre del autor 3" 
+                         onclick="openPopup(this)">
+                    <figcaption class="visually-hidden">Título de la foto 3 por Nombre del autor 3</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./img/unnamed4.jpg" alt="Descripción de la imagen 4" 
+                         data-title="Título de la foto 4" 
+                         data-author="Nombre del autor 4" 
+                         onclick="openPopup(this)">
+                    <figcaption class="visually-hidden">Título de la foto 4 por Nombre del autor 4</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./img/unnamed5.jpg" alt="Descripción de la imagen 5" 
+                         data-title="Título de la foto 5" 
+                         data-author="Nombre del autor 5" 
+                         onclick="openPopup(this)">
+                    <figcaption class="visually-hidden">Título de la foto 5 por Nombre del autor 5</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./img/unnamed6.jpg" alt="Descripción de la imagen 6" 
+                         data-title="Título de la foto 6" 
+                         data-author="Nombre del autor 6" 
+                         onclick="openPopup(this)">
+                    <figcaption class="visually-hidden">Título de la foto 6 por Nombre del autor 6</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./img/unnamed7.jpg" alt="Descripción de la imagen 7" 
+                         data-title="Título de la foto 7" 
+                         data-author="Nombre del autor 7" 
+                         onclick="openPopup(this)">
+                    <figcaption class="visually-hidden">Título de la foto 7 por Nombre del autor 7</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./img/unnamed8.jpg" alt="Descripción de la imagen 8" 
+                         data-title="Título de la foto 8" 
+                         data-author="Nombre del autor 8" 
+                         onclick="openPopup(this)">
+                    <figcaption class="visually-hidden">Título de la foto 8 por Nombre del autor 8</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./img/unnamed9.jpg" alt="Descripción de la imagen 9" 
+                         data-title="Título de la foto 9" 
+                         data-author="Nombre del autor 9" 
+                         onclick="openPopup(this)">
+                    <figcaption class="visually-hidden">Título de la foto 9 por Nombre del autor 9</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./img/unnamed10.jpg" alt="Descripción de la imagen 10" 
+                         data-title="Título de la foto 10" 
+                         data-author="Nombre del autor 10" 
+                         onclick="openPopup(this)">
+                    <figcaption class="visually-hidden">Título de la foto 10 por Nombre del autor 10</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./img/unnamed11.jpg" alt="Descripción de la imagen 11" 
+                         data-title="Título de la foto 11" 
+                         data-author="Nombre del autor 11" 
+                         onclick="openPopup(this)">
+                    <figcaption class="visually-hidden">Título de la foto 11 por Nombre del autor 11</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./img/unnamed12.jpg" alt="Descripción de la imagen 12" 
+                         data-title="Título de la foto 12" 
+                         data-author="Nombre del autor 12" 
+                         onclick="openPopup(this)">
+                    <figcaption class="visually-hidden">Título de la foto 12 por Nombre del autor 12</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./img/unnamed13.jpg" alt="Descripción de la imagen 13" 
+                         data-title="Título de la foto 13" 
+                         data-author="Nombre del autor 13" 
+                         onclick="openPopup(this)">
+                    <figcaption class="visually-hidden">Título de la foto 13 por Nombre del autor 13</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./img/unnamed14.jpg" alt="Descripción de la imagen 14" 
+                         data-title="Título de la foto 14" 
+                         data-author="Nombre del autor 14" 
+                         onclick="openPopup(this)">
+                    <figcaption class="visually-hidden">Título de la foto 14 por Nombre del autor 14</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./img/unnamed15.jpg" alt="Descripción de la imagen 15" 
+                         data-title="Título de la foto 15" 
+                         data-author="Nombre del autor 15" 
+                         onclick="openPopup(this)">
+                    <figcaption class="visually-hidden">Título de la foto 15 por Nombre del autor 15</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./img/unnamed16.jpg" alt="Descripción de la imagen 16" 
+                         data-title="Título de la foto 16" 
+                         data-author="Nombre del autor 16" 
+                         onclick="openPopup(this)">
+                    <figcaption class="visually-hidden">Título de la foto 16 por Nombre del autor 16</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./img/unnamed17.jpg" alt="Descripción de la imagen 17" 
+                         data-title="Título de la foto 17" 
+                         data-author="Nombre del autor 17" 
+                         onclick="openPopup(this)">
+                    <figcaption class="visually-hidden">Título de la foto 17 por Nombre del autor 17</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./img/unnamed18.jpg" alt="Descripción de la imagen 18" 
+                         data-title="Título de la foto 18" 
+                         data-author="Nombre del autor 18" 
+                         onclick="openPopup(this)">
+                    <figcaption class="visually-hidden">Título de la foto 18 por Nombre del autor 18</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./img/unnamed19.jpg" alt="Descripción de la imagen 19" 
+                         data-title="Título de la foto 19" 
+                         data-author="Nombre del autor 19" 
+                         onclick="openPopup(this)">
+                    <figcaption class="visually-hidden">Título de la foto 19 por Nombre del autor 19</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./img/unnamed20.jpg" alt="Descripción de la imagen 20" 
+                         data-title="Título de la foto 20" 
+                         data-author="Nombre del autor 20" 
+                         onclick="openPopup(this)">
+                    <figcaption class="visually-hidden">Título de la foto 20 por Nombre del autor 20</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <div id="overlay" aria-hidden="true"></div>
+
+    <div id="imagePopup" class="popup" aria-modal="true" role="dialog">
+        <button class="close" onclick="closePopup()" aria-label="Cerrar imagen">&times;</button>
+        <img class="popup-content" id="popupImg" alt="">
+        <div id="magnifier" aria-hidden="true"></div>
+        <div class="image-info">
+            <h4 id="imageTitle"></h4>
+            <p id="imageAuthor"></p>
+        </div>
+    </div>
+
+          <!-- Footer Section -->
+          <footer>
+            <div class="footer">
+                <p>&copy; Derechos reservados 2024-2025</p>
+                <h4>Creado y desarrollado por: Youssef Malki</h4>
+            </div>
+        </footer>
+
+        <!-- Script Js-->
+    <script src="script.js"></script>
+</body>
+</html

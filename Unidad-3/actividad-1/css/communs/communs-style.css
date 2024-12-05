@@ -1,0 +1,231 @@
+/* Variables de color */
+:root {
+  --color-bg-primary: #101540;
+  --color-bg-secondary: #700000;
+  --color-bg-tertiary: #870000;
+  --color-text-primary: #E9F2EF;
+  --color-text-secondary: #ececec;
+  --color-hover: #7E7F9A;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-text-secondary);
+  padding: 0 10px;
+}
+
+/* Header Styles */
+header {
+  background-color: var(--color-bg-primary);
+  padding: 10px 20px;
+  width: 100%;
+  margin: 0 -10px;
+}
+
+.headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  max-width: 50px;
+  height: auto;
+}
+
+.logo h1 {
+  color: var(--color-text-primary);
+  font-size: 14px;
+  margin: 0;
+}
+
+.elements {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.elements a {
+  color: var(--color-text-primary);
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.elements a:hover {
+  color: var(--color-hover);
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.login button {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text-primary);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login button:hover {
+  background-color: var(--color-hover);
+}
+
+.login i {
+  font-size: 40px;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.login i:hover {
+  color: var(--color-hover);
+}
+
+.hamburger-icon {
+  display: none;
+  color: var(--color-text-primary);
+  font-size: 30px;
+  cursor: pointer;
+}
+
+h2{
+  color: var(--color-bg-primary);
+  margin: 5px;
+  padding: 5px;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 15px 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+
+
+.introduction {
+  padding: 10px;
+  margin-left: 10px;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid var(--color-bg-primary);
+  border-radius: 5px;
+  color: var(--color-bg-primary);
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  padding: 10px 20px;
+  margin: 0 -10px;
+  text-align: center;
+}
+
+.footer {
+  color: var(--color-text-primary);
+  text-align: center;
+  padding: 15px 0;
+}
+
+.footer p {
+  margin-bottom: 8px;
+}
+
+.footer h4 {
+  font-size: 0.9em;
+  opacity: 0.9;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+header {
+    padding: 10px 20px;
+   
+}
+
+.headers {
+    display: flex;
+}
+.logo {
+  order: 2;
+}
+.elements {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    order: 4;
+}
+
+.elements a {
+    padding: 10px;
+    border-top: 1px solid var(--color-text-primary);
+}
+
+
+.elements.show {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px; 
+    padding-top: 10px;
+   
+}
+
+.hamburger-icon {
+    display: block;
+    font-size: 50px;
+    order: 1;
+    cursor: pointer;
+    color: var(--color-text-primary);
+}
+i{
+    margin-left: 10px;
+}
+.login {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    order: 3;
+}
+
+h1 {
+    font-size: 14px;
+}
+
+.login button {
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+}

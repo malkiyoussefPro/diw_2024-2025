@@ -1,0 +1,120 @@
+
+.introduction {
+    border: 2px solid var(--color-bg-primary);
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--color-text-primary);
+    font-size: 18px;
+}
+
+.galeria-h3{
+    margin: 10px;
+    padding: 10px;
+}
+.gallery-container {
+    border: 2px solid var(--color-bg-primary);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--color-bg-primary);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/*Style Pop Up*/
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90vh;
+    background-color: var(--color-bg-primary);
+    border: 5px solid var(--color-text-primary);
+    padding: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.popup-content {
+    width: 100%;
+    height: auto;
+}
+
+.close {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    color: var(--color-text-primary);
+    font-size: 30px;
+    cursor: pointer;
+    background-color: var(--color-bg-secondary);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.close:hover{
+    background-color: rgba(135, 0, 0, 0.6);
+}
+.image-info {
+    color: var(--color-text-primary);
+    padding: 15px;
+}
+
+/*Style Opacity page inicial */
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(255, 255, 255, 0.4);
+    z-index: 999;
+}
+h2{
+    margin: 5px;
+    padding: 5px;
+}
+p b {
+    color: var(--color-bg-tertiary);
+  }
+
+
+/*Responsive Style*/
+@media (max-width: 768px) {
+    .gallery_images_container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media (hover: hover) {
+    .gallery-item:hover img {
+        transform: scale(1.1);
+    }
+}

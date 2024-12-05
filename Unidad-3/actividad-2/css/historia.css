@@ -1,0 +1,67 @@
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.article-historia {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--color-text-primary);
+  border: 2px solid var(--color-bg-primary);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.article-historia img {
+  width: auto;
+  height: 350px;
+  border: 2px solid var(--color-bg-primary);
+  padding: 10px;
+  border-radius: 5px;
+  transition: transform 0.3s ease-out, opacity 0.2s ease-in-out;
+  will-change: transform, opacity;
+}
+
+.article-historia img:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home, .pargraf-article {
+  border: 2px solid var(--color-bg-primary);
+  padding: 20px;
+  border-radius: 5px;
+  color: var(--color-bg-primary);
+  background-color: var(--color-text-primary);
+  font-size: 18px;
+}
+
+.pargraf-article p {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .article-historia {
+      flex-direction: column;
+      padding: 15px;
+  }
+
+  .article-historia img {
+      width: 100%;
+      height: auto;
+      max-width: 330px;
+  }
+
+  .home, .pargraf-article {
+      padding: 15px;
+  }
+}

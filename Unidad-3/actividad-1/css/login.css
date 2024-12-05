@@ -1,0 +1,89 @@
+
+
+h1 {
+    margin-bottom: 20px;
+    color: var(--color-bg-primary);
+}
+
+
+/* Estilos específicos para la página de login */
+.form-container {
+    background-color: var(--color-bg-primary);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 80px auto;
+}
+
+.form-container h2 {
+    color: var(--color-text-primary);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group i {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    color: var(--color-hover);
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 40px;
+    border: 1px solid var(--color-hover);
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: var(--color-text-primary);
+    color: var(--color-bg-primary);
+}
+
+.input-group input::placeholder {
+    color: var(--color-hover);
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-bg-tertiary);
+    color: var(--color-text-primary);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--color-hover);
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+    .main-content{
+        margin: 30px 0;
+    }
+    .form-container {
+        font-size: 16px;
+        
+    }
+    .footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+
+
+
